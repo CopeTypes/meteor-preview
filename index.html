@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Meteor Web UI</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  
+  <button id="settings-btn">Customize</button>
+
+  <div id="gui"></div>
+
+  <!-- Overlay -->
+  <div id="overlay"></div>
+
+  <!-- Settings Pop-up -->
+  <div id="settings-popup">
+    <h2>Customize GUI Appearance</h2>
+
+    <!-- Settings Content Container -->
+    <div class="settings-content">
+      <!-- Background and Component Colors -->
+      <div class="setting-row">
+        <label for="background-color">Background Color:</label>
+        <input type="color" id="background-color" value="#1e1e1e">
+      </div>
+
+      <div class="setting-row">
+        <label for="category-color">Category Background Color:</label>
+        <input type="color" id="category-color" value="#2c2c2c">
+      </div>
+
+      <div class="setting-row">
+        <label for="module-color">Module Background Color:</label>
+        <input type="color" id="module-color" value="#3a3a3a">
+      </div>
+
+      <!-- Text Colors -->
+      <h3>Text Colors</h3>
+
+      <div class="setting-row">
+        <label for="category-text-color">Category Text Color:</label>
+        <input type="color" id="category-text-color" value="#ffffff">
+      </div>
+
+      <div class="setting-row">
+        <label for="module-text-color">Module Text Color:</label>
+        <input type="color" id="module-text-color" value="#e0e0e0">
+      </div>
+
+      <div class="setting-row">
+        <label for="setting-title-text-color">Setting Title Text Color:</label>
+        <input type="color" id="setting-title-text-color" value="#ffffff">
+      </div>
+
+      <div class="setting-row">
+        <label for="setting-description-text-color">Setting Description Text Color:</label>
+        <input type="color" id="setting-description-text-color" value="#aaaaaa">
+      </div>
+
+      <div class="setting-row">
+        <label for="setting-group-header-text-color">Setting Group Header Text Color:</label>
+        <input type="color" id="setting-group-header-text-color" value="#ffffff">
+      </div>
+
+      <!-- Chroma Settings -->
+      <h3>Chroma Settings</h3>
+
+      <div class="setting-row">
+        <div class="checkbox-item">
+          <span>Enable Chroma</span>
+          <input type="checkbox" id="enable-chroma">
+        </div>
+      </div>
+
+      <!-- Chroma Options -->
+      <div id="chroma-options" class="chroma-options" style="display: none;">
+        <div>
+          <label for="chroma-category-text">
+            <input type="checkbox" id="chroma-category-text"> Category Text
+          </label>
+        </div>
+      
+        <div>
+          <label for="chroma-module-title-text">
+            <input type="checkbox" id="chroma-module-title-text"> Module Title Text
+          </label>
+        </div>
+      
+        <div>
+          <label for="chroma-module-description-text">
+            <input type="checkbox" id="chroma-module-description-text"> Module Description Text
+          </label>
+        </div>
+      
+        <div>
+          <label for="chroma-setting-title">
+            <input type="checkbox" id="chroma-setting-title"> Setting Titles
+          </label>
+        </div>
+      
+        <div>
+          <label for="chroma-setting-description">
+            <input type="checkbox" id="chroma-setting-description"> Setting Descriptions
+          </label>
+        </div>
+      
+        <div>
+          <label for="chroma-setting-group-header">
+            <input type="checkbox" id="chroma-setting-group-header"> Setting Group Headers
+          </label>
+        </div>
+      
+        <div>
+          <label for="chroma-category-background">
+            <input type="checkbox" id="chroma-category-background"> Category Background
+          </label>
+        </div>
+      
+        <div>
+          <label for="chroma-module-background">
+            <input type="checkbox" id="chroma-module-background"> Module Background
+          </label>
+        </div>
+      </div>
+      
+    <br>    
+    <!-- Action Buttons Container -->
+    <div class="button-group">
+      <button id="apply-colors">Apply</button>
+      <button id="reset-settings">Reset</button>
+      <button id="close-popup">Close</button>
+    </div>
+  </div>
+
+  <!-- Include the script.js file -->
+  <script src="script.js"></script>
+</body>
+</html>
